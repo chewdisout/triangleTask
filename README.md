@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm run mocha`
+
+Used to test 3 cases of triangle calculator!
+
 ### `npm start`
 
 Runs the app in the development mode.\
