@@ -3,8 +3,73 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  outline: none;
 }
 body{
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  .container{
+    width: 900px;
+    margin: 0 auto 10px auto;
+    padding: 10px 0;
+    .box{
+      position: relative;
+      background: white;
+      width: 500px;
+      height: 300px;
+      border: 2px solid black;
+      margin: 0 auto 10px auto;
+      #canvasBox{
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+        height: 200px;
+        border: 2px solid grey;
+      }
+      .triangle-type{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+    .input{
+      width: 250px;
+      margin: 0 auto;
+      .input-field{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        margin-bottom: 10px;
+        input{
+          border-radius: 10px;
+          border: 2px solid black;
+          height: 30px;
+          padding-left: 10px;
+        }
+        label{
+          font-weight: bold;
+        }
+      }
+      button{
+        width: 100%;
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-family: "Comic Sans MS", sans-serif;
+        font-weight: bold;
+        background: #71b7e6;
+        &:hover{
+          background: #9b59b6;
+          color: white;
+        }
+      }
+    }
+  }
   padding: 10px 0;
   .text-box{
     width: 900px;
